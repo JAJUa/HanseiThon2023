@@ -167,221 +167,270 @@ public class CubeTurn : MonoBehaviour
 
         TurnTurn.transform.localEulerAngles = new Vector3(0, 0, 0);
     }
-
     public void Trun1()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
 
-        PushBlockhit0.transform.parent = Turn2.transform;
-        PushBlockhit1.transform.parent = Turn2.transform;
-        PushBlockhit2.transform.parent = Turn2.transform;
-        PushBlockhit9.transform.parent = Turn2.transform;
-        PushBlockhit10.transform.parent = Turn2.transform;
-        PushBlockhit11.transform.parent = Turn2.transform;
-        PushBlockhit18.transform.parent = Turn2.transform;
-        PushBlockhit19.transform.parent = Turn2.transform;
-        PushBlockhit20.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            CubeReset();
+
+            PushBlockhit0.transform.parent = Turn2.transform;
+            PushBlockhit1.transform.parent = Turn2.transform;
+            PushBlockhit2.transform.parent = Turn2.transform;
+            PushBlockhit9.transform.parent = Turn2.transform;
+            PushBlockhit10.transform.parent = Turn2.transform;
+            PushBlockhit11.transform.parent = Turn2.transform;
+            PushBlockhit18.transform.parent = Turn2.transform;
+            PushBlockhit19.transform.parent = Turn2.transform;
+            PushBlockhit20.transform.parent = Turn2.transform;
+
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun2()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit0.transform.parent = Turn2.transform;
-        PushBlockhit1.transform.parent = Turn2.transform;
-        PushBlockhit2.transform.parent = Turn2.transform;
-        PushBlockhit9.transform.parent = Turn2.transform;
-        PushBlockhit10.transform.parent = Turn2.transform;
-        PushBlockhit11.transform.parent = Turn2.transform;
-        PushBlockhit18.transform.parent = Turn2.transform;
-        PushBlockhit19.transform.parent = Turn2.transform;
-        PushBlockhit20.transform.parent = Turn2.transform;
+            PushBlockhit0.transform.parent = Turn2.transform;
+            PushBlockhit1.transform.parent = Turn2.transform;
+            PushBlockhit2.transform.parent = Turn2.transform;
+            PushBlockhit9.transform.parent = Turn2.transform;
+            PushBlockhit10.transform.parent = Turn2.transform;
+            PushBlockhit11.transform.parent = Turn2.transform;
+            PushBlockhit18.transform.parent = Turn2.transform;
+            PushBlockhit19.transform.parent = Turn2.transform;
+            PushBlockhit20.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun3()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit3.transform.parent = Turn2.transform;
-        PushBlockhit4.transform.parent = Turn2.transform;
-        PushBlockhit5.transform.parent = Turn2.transform;
-        PushBlockhit12.transform.parent = Turn2.transform;
-        PushBlockhit13.transform.parent = Turn2.transform;
-        PushBlockhit14.transform.parent = Turn2.transform;
-        PushBlockhit21.transform.parent = Turn2.transform;
-        PushBlockhit22.transform.parent = Turn2.transform;
-        PushBlockhit23.transform.parent = Turn2.transform;
+            PushBlockhit3.transform.parent = Turn2.transform;
+            PushBlockhit4.transform.parent = Turn2.transform;
+            PushBlockhit5.transform.parent = Turn2.transform;
+            PushBlockhit12.transform.parent = Turn2.transform;
+            PushBlockhit13.transform.parent = Turn2.transform;
+            PushBlockhit14.transform.parent = Turn2.transform;
+            PushBlockhit21.transform.parent = Turn2.transform;
+            PushBlockhit22.transform.parent = Turn2.transform;
+            PushBlockhit23.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun4()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit3.transform.parent = Turn2.transform;
-        PushBlockhit4.transform.parent = Turn2.transform;
-        PushBlockhit5.transform.parent = Turn2.transform;
-        PushBlockhit12.transform.parent = Turn2.transform;
-        PushBlockhit13.transform.parent = Turn2.transform;
-        PushBlockhit14.transform.parent = Turn2.transform;
-        PushBlockhit21.transform.parent = Turn2.transform;
-        PushBlockhit22.transform.parent = Turn2.transform;
-        PushBlockhit23.transform.parent = Turn2.transform;
+            PushBlockhit3.transform.parent = Turn2.transform;
+            PushBlockhit4.transform.parent = Turn2.transform;
+            PushBlockhit5.transform.parent = Turn2.transform;
+            PushBlockhit12.transform.parent = Turn2.transform;
+            PushBlockhit13.transform.parent = Turn2.transform;
+            PushBlockhit14.transform.parent = Turn2.transform;
+            PushBlockhit21.transform.parent = Turn2.transform;
+            PushBlockhit22.transform.parent = Turn2.transform;
+            PushBlockhit23.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun5()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit6.transform.parent = Turn2.transform;
-        PushBlockhit7.transform.parent = Turn2.transform;
-        PushBlockhit8.transform.parent = Turn2.transform;
-        PushBlockhit15.transform.parent = Turn2.transform;
-        PushBlockhit16.transform.parent = Turn2.transform;
-        PushBlockhit17.transform.parent = Turn2.transform;
-        PushBlockhit24.transform.parent = Turn2.transform;
-        PushBlockhit25.transform.parent = Turn2.transform;
-        PushBlockhit26.transform.parent = Turn2.transform;
+            PushBlockhit6.transform.parent = Turn2.transform;
+            PushBlockhit7.transform.parent = Turn2.transform;
+            PushBlockhit8.transform.parent = Turn2.transform;
+            PushBlockhit15.transform.parent = Turn2.transform;
+            PushBlockhit16.transform.parent = Turn2.transform;
+            PushBlockhit17.transform.parent = Turn2.transform;
+            PushBlockhit24.transform.parent = Turn2.transform;
+            PushBlockhit25.transform.parent = Turn2.transform;
+            PushBlockhit26.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x + 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun6()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit6.transform.parent = Turn2.transform;
-        PushBlockhit7.transform.parent = Turn2.transform;
-        PushBlockhit8.transform.parent = Turn2.transform;
-        PushBlockhit15.transform.parent = Turn2.transform;
-        PushBlockhit16.transform.parent = Turn2.transform;
-        PushBlockhit17.transform.parent = Turn2.transform;
-        PushBlockhit24.transform.parent = Turn2.transform;
-        PushBlockhit25.transform.parent = Turn2.transform;
-        PushBlockhit26.transform.parent = Turn2.transform;
+            PushBlockhit6.transform.parent = Turn2.transform;
+            PushBlockhit7.transform.parent = Turn2.transform;
+            PushBlockhit8.transform.parent = Turn2.transform;
+            PushBlockhit15.transform.parent = Turn2.transform;
+            PushBlockhit16.transform.parent = Turn2.transform;
+            PushBlockhit17.transform.parent = Turn2.transform;
+            PushBlockhit24.transform.parent = Turn2.transform;
+            PushBlockhit25.transform.parent = Turn2.transform;
+            PushBlockhit26.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(TurnTurn.rotation.x - 90, 0, 0), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
 
     }
 
     public void Trun7()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit2.transform.parent = Turn2.transform;
-        PushBlockhit5.transform.parent = Turn2.transform;
-        PushBlockhit8.transform.parent = Turn2.transform;
-        PushBlockhit11.transform.parent = Turn2.transform;
-        PushBlockhit14.transform.parent = Turn2.transform;
-        PushBlockhit17.transform.parent = Turn2.transform;
-        PushBlockhit20.transform.parent = Turn2.transform;
-        PushBlockhit23.transform.parent = Turn2.transform;
-        PushBlockhit26.transform.parent = Turn2.transform;
+            PushBlockhit2.transform.parent = Turn2.transform;
+            PushBlockhit5.transform.parent = Turn2.transform;
+            PushBlockhit8.transform.parent = Turn2.transform;
+            PushBlockhit11.transform.parent = Turn2.transform;
+            PushBlockhit14.transform.parent = Turn2.transform;
+            PushBlockhit17.transform.parent = Turn2.transform;
+            PushBlockhit20.transform.parent = Turn2.transform;
+            PushBlockhit23.transform.parent = Turn2.transform;
+            PushBlockhit26.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun8()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit2.transform.parent = Turn2.transform;
-        PushBlockhit5.transform.parent = Turn2.transform;
-        PushBlockhit8.transform.parent = Turn2.transform;
-        PushBlockhit11.transform.parent = Turn2.transform;
-        PushBlockhit14.transform.parent = Turn2.transform;
-        PushBlockhit17.transform.parent = Turn2.transform;
-        PushBlockhit20.transform.parent = Turn2.transform;
-        PushBlockhit23.transform.parent = Turn2.transform;
-        PushBlockhit26.transform.parent = Turn2.transform;
+            PushBlockhit2.transform.parent = Turn2.transform;
+            PushBlockhit5.transform.parent = Turn2.transform;
+            PushBlockhit8.transform.parent = Turn2.transform;
+            PushBlockhit11.transform.parent = Turn2.transform;
+            PushBlockhit14.transform.parent = Turn2.transform;
+            PushBlockhit17.transform.parent = Turn2.transform;
+            PushBlockhit20.transform.parent = Turn2.transform;
+            PushBlockhit23.transform.parent = Turn2.transform;
+            PushBlockhit26.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun9()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit1.transform.parent = Turn2.transform;
-        PushBlockhit4.transform.parent = Turn2.transform;
-        PushBlockhit7.transform.parent = Turn2.transform;
-        PushBlockhit10.transform.parent = Turn2.transform;
-        PushBlockhit13.transform.parent = Turn2.transform;
-        PushBlockhit16.transform.parent = Turn2.transform;
-        PushBlockhit19.transform.parent = Turn2.transform;
-        PushBlockhit22.transform.parent = Turn2.transform;
-        PushBlockhit25.transform.parent = Turn2.transform;
+            PushBlockhit1.transform.parent = Turn2.transform;
+            PushBlockhit4.transform.parent = Turn2.transform;
+            PushBlockhit7.transform.parent = Turn2.transform;
+            PushBlockhit10.transform.parent = Turn2.transform;
+            PushBlockhit13.transform.parent = Turn2.transform;
+            PushBlockhit16.transform.parent = Turn2.transform;
+            PushBlockhit19.transform.parent = Turn2.transform;
+            PushBlockhit22.transform.parent = Turn2.transform;
+            PushBlockhit25.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun10()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit1.transform.parent = Turn2.transform;
-        PushBlockhit4.transform.parent = Turn2.transform;
-        PushBlockhit7.transform.parent = Turn2.transform;
-        PushBlockhit10.transform.parent = Turn2.transform;
-        PushBlockhit13.transform.parent = Turn2.transform;
-        PushBlockhit16.transform.parent = Turn2.transform;
-        PushBlockhit19.transform.parent = Turn2.transform;
-        PushBlockhit22.transform.parent = Turn2.transform;
-        PushBlockhit25.transform.parent = Turn2.transform;
+            PushBlockhit1.transform.parent = Turn2.transform;
+            PushBlockhit4.transform.parent = Turn2.transform;
+            PushBlockhit7.transform.parent = Turn2.transform;
+            PushBlockhit10.transform.parent = Turn2.transform;
+            PushBlockhit13.transform.parent = Turn2.transform;
+            PushBlockhit16.transform.parent = Turn2.transform;
+            PushBlockhit19.transform.parent = Turn2.transform;
+            PushBlockhit22.transform.parent = Turn2.transform;
+            PushBlockhit25.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun11()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit0.transform.parent = Turn2.transform;
-        PushBlockhit3.transform.parent = Turn2.transform;
-        PushBlockhit6.transform.parent = Turn2.transform;
-        PushBlockhit9.transform.parent = Turn2.transform;
-        PushBlockhit12.transform.parent = Turn2.transform;
-        PushBlockhit15.transform.parent = Turn2.transform;
-        PushBlockhit18.transform.parent = Turn2.transform;
-        PushBlockhit21.transform.parent = Turn2.transform;
-        PushBlockhit24.transform.parent = Turn2.transform;
+            PushBlockhit0.transform.parent = Turn2.transform;
+            PushBlockhit3.transform.parent = Turn2.transform;
+            PushBlockhit6.transform.parent = Turn2.transform;
+            PushBlockhit9.transform.parent = Turn2.transform;
+            PushBlockhit12.transform.parent = Turn2.transform;
+            PushBlockhit15.transform.parent = Turn2.transform;
+            PushBlockhit18.transform.parent = Turn2.transform;
+            PushBlockhit21.transform.parent = Turn2.transform;
+            PushBlockhit24.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z - 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 
     public void Trun12()
     {
-        CubeReset();
+        if (Player.TurnCube >= 1)
+        {
+            CubeReset();
 
-        PushBlockhit0.transform.parent = Turn2.transform;
-        PushBlockhit3.transform.parent = Turn2.transform;
-        PushBlockhit6.transform.parent = Turn2.transform;
-        PushBlockhit9.transform.parent = Turn2.transform;
-        PushBlockhit12.transform.parent = Turn2.transform;
-        PushBlockhit15.transform.parent = Turn2.transform;
-        PushBlockhit18.transform.parent = Turn2.transform;
-        PushBlockhit21.transform.parent = Turn2.transform;
-        PushBlockhit24.transform.parent = Turn2.transform;
+            PushBlockhit0.transform.parent = Turn2.transform;
+            PushBlockhit3.transform.parent = Turn2.transform;
+            PushBlockhit6.transform.parent = Turn2.transform;
+            PushBlockhit9.transform.parent = Turn2.transform;
+            PushBlockhit12.transform.parent = Turn2.transform;
+            PushBlockhit15.transform.parent = Turn2.transform;
+            PushBlockhit18.transform.parent = Turn2.transform;
+            PushBlockhit21.transform.parent = Turn2.transform;
+            PushBlockhit24.transform.parent = Turn2.transform;
 
-        TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
-        Invoke("CubeReset", 2.1f);
+            TurnTurn.DORotate(new Vector3(0, 0, TurnTurn.rotation.z + 90), 2f);
+            Invoke("CubeReset", 2.1f);
+            Player.TurnCube -= 1;
+        }
     }
 }
